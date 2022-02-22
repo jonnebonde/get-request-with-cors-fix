@@ -1,7 +1,10 @@
 const url = "https://elephant-api.herokuapp.com/elephants";
 const proxy = "https://noroffcors.herokuapp.com/";
 
+
 const corsFix = proxy + url;
+
+
 
 const resultsContainer = document.querySelector(".results");
 
@@ -16,8 +19,9 @@ async function makeApiCall() {
 
     } catch (error) {
         console.log(error);
-        resultsContainer.innerHTML = alert("error", error);
+        resultsContainer.innerHTML = ("success", "error")
     }
 }
 
 makeApiCall();
+
